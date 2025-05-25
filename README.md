@@ -8,7 +8,8 @@ We will release the code once the paper is accepted. Stay tuned!
 Tactile image generation significantly reduces reliance on costly, wear-prone sensors by synthesizing high-fidelity tactile data, providing an efficient solution for tactile information acquisition in robotic perception and human-machine interaction systems. However, existing methods rely on large-scale multimodal datasets and lack text-to-touch generation capability, struggling in vision-limited environments. We introduce VQ-Touch, which, to the best of our knowledge, is the first few-shot tactile generation framework supporting cross-sensor and multi-scenario applications. To extract complex deformation and texture features from limited data, we propose DM-VQGAN, an efficient tactile representation learner. Furthermore, we introduce a discrete diffusion decoder with a unified condition interface, supporting text, images, and labels for diverse multimodal generation tasks. We enhance model generalizability through clustering and few-shot mixed training, achieving compatibility with current mainstream sensors and their variants. Experiments demonstrate that VQ-Touch surpasses state-of-the-art work in multiple tasks.
 
 ## The illustration of tactile generation tasks and the application range comparison of diffrent methods.
-![Tactile Generation Tasks](Tactile Generation Tasks.png)
+![](Tasks.png)
+The illustration of tactile generation tasks and the application range comparison of different methods. VQ-Touch effectively supports several tactile generation tasks, including few-shot generation, zero-shot transfer, text-to-touch generation, and vision-to-touch generation, and is applicable to most mainstream tactile sensors (e.g., GelSight, DIGIT, and GelSight Mini). Under conditions of data scarcity and vision limitations, VQ-Touch remains usable, demonstrating significant general advantages over existing methods.
 
 ## Overview of the proposed VQ-Touch framework.
 ![](pipline.png)
